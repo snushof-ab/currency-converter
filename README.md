@@ -1,4 +1,4 @@
-Currency currencyConverter
+Currency Converter
 ==============
 
 A library that convert amount to other currency with the rate of input date using exchangeratesapi.io API
