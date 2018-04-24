@@ -5,12 +5,12 @@ A library that convert amount to other currency with the rate of input date usin
 
 ## Installation
 ```bash
-npm install currency-converter --save
+npm install nam-currency-converter --save
 ```
 
 ## Usage
 ```js
-const currencyConverter = require('currency-converter');
+const currencyConverter = require('nam-currency-converter');
 currencyConverter("2011-06-03", "USD", 100, "CAD")
 .then(response => {
   console.log(response);
