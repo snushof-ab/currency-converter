@@ -4,7 +4,7 @@
   "description": "coding test",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/mocha -R spec"
+    "test": "mocha -R spec"
   },
   "author": "Nam Kwon",
   "license": "ISC",
