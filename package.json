@@ -1,19 +1,19 @@
 {
-  "name": "nam-currency-converter",
+  "name": "@snushof-ab/currency-converter",
   "version": "1.0.0",
   "description": "coding test",
   "main": "index.js",
   "scripts": {
     "test": "mocha -R spec"
   },
-  "author": "Nam Kwon",
-  "license": "ISC",
+  "author": "Snushof AB",
+  "license": "MIT",
   "dependencies": {
-    "axios": "^0.18.0"
+    "axios": "0.18.0"
   },
   "devDependencies": {
-    "chai": "^4.1.2",
-    "mocha": "^5.1.1",
-    "nock": "^9.2.5"
+    "chai": "4.1.2",
+    "mocha": "5.1.1",
+    "nock": "9.2.5"
   }
 }
