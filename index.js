@@ -13,7 +13,7 @@ module.exports = function(date, currencyFrom, amount, currencyTo) {
   let base_currency = currencyFrom.toUpperCase();
   let conversion_currency = currencyTo.toUpperCase();
   return axios
-    .get(`https://exchangeratesapi.io/api/${date}?base=${base_currency}`)
+    .get(`https://exchangeratesapi.io/${date}?base=${base_currency}`)
     .then(json => json.data)
     .then(function(data){
         var result = {};
