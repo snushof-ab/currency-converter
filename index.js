@@ -10,8 +10,8 @@
 const axios = require('axios');
 
 module.exports = function (date, currencyFrom, amount, currencyTo) {
-    let base_currency = currencyFrom.toUpperCase();
-    let conversion_currency = currencyTo.toUpperCase();
+    let base_currency = (currencyFrom || '').toUpperCase();
+    let conversion_currency = (currencyTo || '').toUpperCase();
     return axios
         .get(`https://api.exchangeratesapi.io/${date}?base=${base_currency}`)
         .then(json => json.data)
