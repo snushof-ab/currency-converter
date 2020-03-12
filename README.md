@@ -5,16 +5,15 @@ A library that convert amount to other currency with the rate of input date usin
 
 ## Installation
 ```bash
-yarn add snushof-ab/currency-converter
+yarn add @snushof-ab/currency-converter
 ```
 
 ## Usage
 ```js
-const currencyConverter = require('snushof-ab/currency-converter');
-currencyConverter("2011-06-03", "USD", 100, "CAD")
-.then(response => {
-  console.log(response);
-})
+import currencyConverter from '@snushof-ab/currency-converter';
+const res = await currencyConverter("2011-06-03", "USD", 100, "CAD");
+
+console.log(res);
 ```
 
 ## Inputs
