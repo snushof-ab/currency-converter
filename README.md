@@ -1,26 +1,25 @@
 Currency Converter
 ==============
-
 A library that convert amount to other currency with the rate of input date using exchangeratesapi.io API
 
 ## Installation
 ```bash
-yarn add @snushof-ab/currency-converter
+yarn add @techhof-ab/currency-converter
 ```
 
 ## Usage
 ```js
-import currencyConverter from '@snushof-ab/currency-converter';
-const res = await currencyConverter("2011-06-03", "USD", 100, "CAD");
+import CurrencyConverter from '@snushof-ab/currency-converter';
+const res = await CurrencyConverter(100, "USD", "CAD", "2011-06-03");
 
 console.log(res);
 ```
 
 ## Inputs
-- `date` - (String) base date
-- `currencyFrom` - (String) base currency code
 - `amount` - (Number) base amount
+- `currencyFrom` - (String) base currency code
 - `currencyTo` - (String) conversion currency code
+- `date` - (String) base date
 
 
 ## Output

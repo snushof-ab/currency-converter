@@ -1,15 +1,16 @@
 /**
  * Currency conversion module by applying historical exchange rate using exchangeratesapi.io API
- * @param {string} date
- * @param {string} currencyFrom - base currency
  * @param {number} amount
+ * @param {string} currencyFrom - base currency
  * @param {string} currencyTo - conversion currency
+ * @param {string} date
  * @return {object} JSON object with all input data and conversion amount by calculating using API
  */
 
+"use strict";
 const axios = require('axios');
 
-module.exports = function (amount, currencyFrom, currencyTo, date) {
+module.exports = (amount, currencyFrom, currencyTo, date) => {
     let base_currency = (currencyFrom || '').toUpperCase();
     let conversion_currency = (currencyTo || '').toUpperCase();
     return axios
