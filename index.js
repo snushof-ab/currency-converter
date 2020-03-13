@@ -9,7 +9,7 @@
 
 const axios = require('axios');
 
-module.exports = function (date, currencyFrom, amount, currencyTo) {
+module.exports = function (amount, currencyFrom, currencyTo, date) {
     let base_currency = (currencyFrom || '').toUpperCase();
     let conversion_currency = (currencyTo || '').toUpperCase();
     return axios
