@@ -1,12 +1,12 @@
 {
-  "name": "@snushof-ab/currency-converter",
+  "name": "@techhof-ab/currency-converter",
   "version": "1.0.0",
   "description": "coding test",
   "main": "index.js",
   "scripts": {
     "test": "mocha -R spec"
   },
-  "author": "Snushof AB",
+  "author": "Techhof AB",
   "license": "MIT",
   "dependencies": {
     "axios": "0.18.0"
