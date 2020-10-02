@@ -10,7 +10,7 @@
 "use strict";
 const axios = require('axios');
 
-module.exports = (amount, currencyFrom, currencyTo, date) => {
+const convertor = (amount, currencyFrom, currencyTo, date) => {
     let base_currency = (currencyFrom || '').toUpperCase();
     let conversion_currency = (currencyTo || '').toUpperCase();
     return axios
@@ -35,3 +35,5 @@ module.exports = (amount, currencyFrom, currencyTo, date) => {
         })
         .catch(error => console.log(error))
 };
+
+module.exports = convertor;
